@@ -1,0 +1,88 @@
+<!-- FILE: register.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register | Freedom Reign</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Freedom Reign</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="team.html">Team</a></li>
+          <li class="nav-item"><a class="nav-link" href="programs.html">Programs</a></li>
+          <li class="nav-item"><a class="nav-link" href="schedule.html">Schedule</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          <li class="nav-item"><a class="nav-link active" href="register.html">Register</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Registration Section -->
+  <section class="py-5">
+    <div class="container">
+      <h1 class="text-center mb-4">Join Freedom Reign Academy</h1>
+      <p class="text-center mb-5">Fill out the form below to register as a player. We will contact you with the next steps.</p>
+
+      <div class="row justify-content-center">
+        <div class="col-md-8">
+          <form action="https://formspree.io/f/xqabrpga" method="POST">
+            <div class="mb-3">
+              <label for="fullName" class="form-label">Full Name</label>
+              <input type="text" class="form-control" id="fullName" name="fullName" required>
+            </div>
+            <div class="mb-3">
+              <label for="age" class="form-label">Age</label>
+              <input type="number" class="form-control" id="age" name="age" required>
+            </div>
+            <div class="mb-3">
+              <label for="position" class="form-label">Preferred Position</label>
+              <select class="form-select" id="position" name="position" required>
+                <option value="">-- Select Position --</option>
+                <option value="Point Guard">Point Guard</option>
+                <option value="Shooting Guard">Shooting Guard</option>
+                <option value="Small Forward">Small Forward</option>
+                <option value="Power Forward">Power Forward</option>
+                <option value="Center">Center</option>
+              </select>
+            </div>
+            <div class="mb-3">
+              <label for="guardian" class="form-label">Parent/Guardian Name</label>
+              <input type="text" class="form-control" id="guardian" name="guardian">
+            </div>
+            <div class="mb-3">
+              <label for="contact" class="form-label">Phone Number</label>
+              <input type="tel" class="form-control" id="contact" name="contact" required>
+            </div>
+            <div class="mb-3">
+              <label for="message" class="form-label">Additional Notes</label>
+              <textarea class="form-control" id="message" rows="4" name="message"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit Application</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-3">
+    <p class="mb-0">&copy; 2025 Freedom Reign Basketball Academy. All rights reserved.</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
